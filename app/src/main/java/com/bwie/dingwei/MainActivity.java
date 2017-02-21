@@ -1,0 +1,27 @@
+package com.bwie.dingwei;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
+import com.bwie.ding.R;
+
+public class MainActivity extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public void btn_ditu(View view){
+        startActivity(new Intent(MainActivity.this,DituActivity.class));
+    }
+    public void btn_dingwei(View view){
+        startActivity(new Intent(MainActivity.this,DingweiActivity.class));
+    }
+    public void btn_baidu(View view){
+        startActivity(new Intent(MainActivity.this,DaohangActivity.class));
+    }
+}
